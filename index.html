@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-content">
+      <div class="header-content container">
         <h1 class="header-title">
           Hello, my name is <span>Tiago Rodrigues</span>
           <br />
@@ -24,7 +24,7 @@
     <main>
       <section class="about">
         <h2 class="section-heading" id="heading">About me</h2>
-        <div class="about-content flex">
+        <div class="about-content container flex">
           <img src="assets/img/tiago-rodrigues.webp" alt="photo of Tiago Rodrigues" class="about-img" />
           <div class="about-text">
             <p>
@@ -36,50 +36,58 @@
           </div>
         </div>
 
-        <blockquote class="about-quote">
-          “Don't comment bad code - rewrite it.”
-          <br />
-          <cite class="about-quote__cite">Brian Kernighan</cite>
-        </blockquote>
+        <div class="about-quote">
+          <blockquote>
+            “Don't comment bad code - rewrite it.”
+            <br />
+            <cite class="about-quote__cite">Brian Kernighan</cite>
+          </blockquote>
+        </div>
       </section>
 
-      <!-- <section class="projects">
-        <h2>Projects</h2>
+      <section class="projects">
+        <h2 class="section-heading">Projects</h2>
 
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
-            perspiciatis unde, corrupti amet alias.
-          </p>
-          <a href="#">Source Code</a>
-          <a href="#">View Project</a>
+        <article class="projects-article container flex">
+          <div class="projects-content">
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
+              perspiciatis unde, corrupti amet alias.
+            </p>
+            <a href="#" class="button button-primary">Source Code</a>
+            <a href="#" class="button button-tertiary">View Project</a>
+          </div>
 
-          <img src="assets/img/design_politics-01.webp" alt="" />
+          <img src="assets/img/design_politics-01.webp" alt="" class="projects-img" />
         </article>
 
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
-            perspiciatis unde, corrupti amet alias.
-          </p>
-          <a href="#">Source Code</a>
-          <a href="#">View Project</a>
+        <article class="projects-article container flex">
+          <div class="projects-content">
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
+              perspiciatis unde, corrupti amet alias.
+            </p>
+            <a href="#" class="button button-primary">Source Code</a>
+            <a href="#" class="button button-tertiary">View Project</a>
+          </div>
 
-          <img src="assets/img/design_politics-02.webp" alt="" />
+          <img src="assets/img/design_politics-02.webp" alt="" class="projects-img" />
         </article>
 
-        <article>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
-            perspiciatis unde, corrupti amet alias.
-          </p>
-          <a href="#">Source Code</a>
-          <a href="#">View Project</a>
+        <article class="projects-article container flex">
+          <div class="projects-content">
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, quod quidem rem, veritatis sequi voluptate iste accusamus animi minima perferendis minus incidunt sit fuga iure
+              perspiciatis unde, corrupti amet alias.
+            </p>
+            <a href="#" class="button button-primary">Source Code</a>
+            <a href="#" class="button button-tertiary">View Project</a>
+          </div>
 
-          <img src="assets/img/design_politics-03.webp" alt="" />
+          <img src="assets/img/design_politics-03.webp" alt="" class="projects-img" />
         </article>
       </section>
 
@@ -90,14 +98,14 @@
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">GitHub</a></li>
+    <footer class="footer">
+      <ul class="footer-social">
+        <li><a href="#" class="social-link github"></a></li>
+        <li><a href="#" class="social-link linkedin"></a></li>
+        <li><a href="#" class="social-link twitter"></a></li>
+        <li><a href="#" class="social-link youtube"></a></li>
       </ul>
       <p>@ 2022 - Portfolio Design by Tiago Rodrigues</p>
-    </footer> -->
+    </footer>
   </body>
 </html>
