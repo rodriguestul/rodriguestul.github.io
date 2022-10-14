@@ -1,0 +1,22 @@
+{
+  "name": "rodriguestul.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodriguestul/rodriguestul.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodriguestul/rodriguestul.github.io/issues"
+  },
+  "homepage": "https://github.com/rodriguestul/rodriguestul.github.io#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
