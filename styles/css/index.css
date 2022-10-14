@@ -204,8 +204,8 @@ blockquote {
 }
 
 .contact a {
+  margin-inline: auto;
   text-align: center;
-  margin: 0 auto;
 }
 
 .contact::before {
@@ -229,17 +229,22 @@ blockquote {
 .footer-social {
   display: flex;
   gap: 20px;
+  margin-inline: auto;
+}
+
+.social-item {
+  background-color: var(--color-text-secondary);
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .social-link {
-  width: 35px;
-  aspect-ratio: 1;
-  display: inline-block;
-  border-radius: 50%;
-  background-size: 25px;
-  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
   background-position: center;
-  background-color: var(--color-text-secondary);
+  background-repeat: no-repeat;
 }
 
 .github {
@@ -272,9 +277,5 @@ blockquote {
 
   .about {
     height: 100vh;
-  }
-
-  .projects-content a {
-    margin-bottom: 0;
   }
 }
