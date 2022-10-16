@@ -1,0 +1,173 @@
+@import "reset";
+@import "variables";
+@import "headings";
+@import "reusable-classes";
+@import "buttons";
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-title {
+  color: $color-text-primary;
+  margin-bottom: 40px;
+}
+
+.header-title span {
+  color: $color-primary;
+}
+
+.header .button {
+  padding: 10px 20px;
+}
+
+.about {
+  position: relative;
+  padding-block: 50px;
+  background-color: $color-primary;
+  color: $color-text-secondary;
+
+  @media only screen and (min-width: 768px) {
+    height: 100vh;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100px;
+    background-color: $color-primary;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+}
+
+.about-content {
+  margin-bottom: 50px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.about-text {
+  a {
+    margin-top: 1rem;
+  }
+}
+
+.about-quote {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.about-quote__cite {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.projects {
+  padding-block: 150px;
+}
+
+.projects-article {
+  margin-bottom: 50px;
+}
+
+.projects-content {
+  a {
+    margin: 0 20px 20px 0;
+  }
+}
+
+.projects-img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.contact {
+  position: relative;
+  padding: 50px 0 100px 0;
+  background-color: $color-primary;
+  color: $color-text-secondary;
+}
+
+.contact {
+  a {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    background-color: $color-primary;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  }
+}
+
+.footer {
+  padding-block: 50px;
+  background-color: $color-text-primary;
+  color: $color-text-secondary;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  margin-inline: auto;
+}
+
+.social-item {
+  background-color: $color-secondary;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.github {
+  background-image: url(../../assets/icons/icon-github.png);
+  background-size: 35px;
+}
+
+.linkedin {
+  background-image: url(../../assets/icons/icon-linkedin.png);
+}
+
+.twitter {
+  background-image: url(../../assets/icons/icon-twitter.png);
+}
+
+.youtube {
+  background-image: url(../../assets/icons/icon-youtube.png);
+}

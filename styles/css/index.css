@@ -1,11 +1,3 @@
-:root {
-  --color-text-primary: #002324;
-  --color-text-secondary: #fff;
-  --color-primary: #6608c5;
-}
-
-/* styles resets */
-
 * {
   box-sizing: border-box;
 }
@@ -36,16 +28,20 @@ h2 {
 h1 {
   font-size: 30px;
 }
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
 
 h2 {
   font-size: 28px;
 }
-
-.section-heading {
-  margin-bottom: 40px;
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
 }
-
-/* reusable classes */
 
 @media only screen and (min-width: 992px) {
   .flex {
@@ -60,6 +56,10 @@ h2 {
   margin-inline: auto;
 }
 
+.section-heading {
+  margin-bottom: 40px;
+}
+
 .button {
   text-decoration: none;
   display: inline-block;
@@ -71,41 +71,37 @@ h2 {
 }
 
 .button-primary {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #6608c5;
+  border-color: #6608c5;
 }
-
 .button-primary:hover {
-  color: var(--color-text-secondary);
-  background-color: var(--color-primary);
+  color: #fff;
+  background-color: #6608c5;
   transition: all 0.2s ease-in-out;
 }
 
 .button-secondary {
-  color: var(--color-text-secondary);
-  border-color: var(--color-text-secondary);
+  color: #fff;
+  border-color: #fff;
 }
-
 .button-secondary:hover {
-  color: var(--color-primary);
-  background-color: var(--color-text-secondary);
+  color: #6608c5;
+  background-color: #fff;
   transition: all 0.2s ease-in-out;
 }
 
 .button-tertiary {
-  color: var(--color-text-secondary);
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #fff;
+  background-color: #6608c5;
+  border-color: #6608c5;
 }
-
 .button-tertiary:hover {
-  color: var(--color-primary);
-  background-color: var(--color-text-secondary);
-  border-color: var(--color-primary);
+  color: #6608c5;
+  background-color: #fff;
+  border-color: #6608c5;
   transition: all 0.2s ease-in-out;
 }
 
-/* homepage styles */
 .header {
   height: 100vh;
   display: flex;
@@ -118,12 +114,12 @@ h2 {
 }
 
 .header-title {
-  color: var(--color-text-primary);
+  color: #002324;
   margin-bottom: 40px;
 }
 
 .header-title span {
-  color: var(--color-primary);
+  color: #6608c5;
 }
 
 .header .button {
@@ -133,17 +129,21 @@ h2 {
 .about {
   position: relative;
   padding-block: 50px;
-  background-color: var(--color-primary);
-  color: var(--color-text-secondary);
+  background-color: #6608c5;
+  color: #fff;
 }
-
+@media only screen and (min-width: 768px) {
+  .about {
+    height: 100vh;
+  }
+}
 .about::after {
   content: "";
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100px;
-  background-color: var(--color-primary);
+  background-color: #6608c5;
   clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
@@ -199,29 +199,28 @@ blockquote {
 .contact {
   position: relative;
   padding: 50px 0 100px 0;
-  background-color: var(--color-primary);
-  color: var(--color-text-secondary);
+  background-color: #6608c5;
+  color: #fff;
 }
 
 .contact a {
   margin-inline: auto;
   text-align: center;
 }
-
 .contact::before {
   content: "";
   position: absolute;
   top: -100px;
   width: 100%;
   height: 100px;
-  background-color: var(--color-primary);
+  background-color: #6608c5;
   clip-path: polygon(100% 100%, 100% 0, 0 100%);
 }
 
 .footer {
   padding-block: 50px;
-  background-color: var(--color-text-primary);
-  color: var(--color-text-secondary);
+  background-color: #002324;
+  color: #fff;
   font-size: 14px;
   text-align: center;
 }
@@ -233,7 +232,7 @@ blockquote {
 }
 
 .social-item {
-  background-color: var(--color-text-secondary);
+  background-color: #fff;
   border-radius: 50%;
   padding: 5px;
 }
@@ -264,18 +263,4 @@ blockquote {
   background-image: url(../../assets/icons/icon-youtube.png);
 }
 
-/* desktop */
-
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  .about {
-    height: 100vh;
-  }
-}
+/*# sourceMappingURL=index.css.map */

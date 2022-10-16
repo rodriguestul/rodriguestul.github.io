@@ -1,0 +1,16 @@
+.flex {
+  @media only screen and (min-width: 992px) {
+    display: flex;
+    gap: 70px;
+  }
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
