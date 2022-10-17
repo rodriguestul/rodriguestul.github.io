@@ -126,18 +126,29 @@ blockquote {
   }
 }
 
+.contact-button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   padding-block: 50px;
+  display: flex;
   background-color: $color-text-primary;
   color: $color-text-secondary;
   font-size: 14px;
   text-align: center;
 }
 
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-social {
   display: flex;
   gap: 20px;
-  margin-inline: auto;
 }
 
 .social-item {

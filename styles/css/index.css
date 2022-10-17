@@ -217,18 +217,29 @@ blockquote {
   clip-path: polygon(100% 100%, 100% 0, 0 100%);
 }
 
+.contact-button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   padding-block: 50px;
+  display: flex;
   background-color: #002324;
   color: #fff;
   font-size: 14px;
   text-align: center;
 }
 
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-social {
   display: flex;
   gap: 20px;
-  margin-inline: auto;
 }
 
 .social-item {
